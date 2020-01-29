@@ -1,0 +1,220 @@
+/* >>>>>   GENERALES   <<<<< */
+body {
+   font-family: 'Comfortaa';
+	margin: 15px 0px 0px 0px;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.verde { color: #06500B; }
+
+/* >>>>>   CABECERA   <<<<< */
+header { margin-bottom: 60px; }
+	header ul { margin-top: 40px; }
+		header li { display: inline; }
+
+			header a { letter-spacing: 2px; }
+			header a:hover { color: #3FE6A3; }
+
+			header ul span { color: #C6E4D8; }
+
+/* >>>>>   CUERPO   <<<<< */
+#clubes {
+	background-image: url("../img/comillas.png");
+	background-repeat: no-repeat;
+}
+	#clubes > p { margin-bottom: 50px; }
+
+	#izda { width: 600px; }
+		#izda img { margin: 15px 20px 0px 0px; }
+
+		#izda p { width: 550px; }
+
+	#dcha {
+		height: 380px;
+		margin: 25px 15px 0px 0px;
+		width: 400px;
+	}
+		#dcha img { clip-path: polygon(0% 0%, 400% 0%, 0% 100%); }
+
+		#dcha div {
+			margin-top: -20px;
+			padding: 20px;
+		}
+			button {
+				border: 1px solid #000000;
+				border-radius: 3px;
+				padding: 5px 10px;
+			}
+
+#grupos {
+	background: #EEF3EB;
+	clip-path: polygon(0% 50%, 500% 0%, 0% 100%);
+	margin: -400px 0px -75px 0px;
+	padding: 550px 120px 220px;
+}
+	#grupos ul {
+		background: #E3F5D5;
+		font-weight: bold;
+		margin-top: 17px;
+		width: 320px;
+	}
+		#grupos ul li { padding: 10px; }
+
+	#grupos div {
+		text-align: justify;
+		width: 600px;
+	}
+
+table {
+	padding: 20px 20px 45px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 82%;
+	z-index: 1;
+}
+	td:nth-child(2) {
+		color: #8F9F98;
+		padding: 75px 42px 0px 30px;
+	}
+		table h2 {
+			color: #42B54A;
+			margin: -50px 0px 5px 0px;
+		}
+
+#servicios {
+	clip-path: polygon(110% 0%, 0% 1180%, 0% 35%);
+	margin-top: 145px;
+	padding: 190px 0px 40px 0px;
+}
+	#servicios h2 { margin-bottom: 35px; }
+
+	#servicios div {
+		background: #05462C;
+		display: flex;
+		padding: 10px 5px 0px;
+		width: 1100px;
+	}
+		#servicios article {
+			margin: 0px 5px;
+			width: 370px;
+		}
+			#pie2 { background: #2B5B07; }
+
+			#servicios p {
+				background: #006A3F;
+				height: 250px;
+				margin-bottom: 10px;
+				margin-top: 10px;
+				padding: 20px;
+			}
+
+/* >>>>>   GRUPOS   <<<<< */
+header, #clubes, #grupos, #grupos ul { overflow: hidden; }
+header, #clubes, table, #servicios div { margin: 0 auto; }
+header, #clubes { width: 1150px; }
+
+header img, #clubes #izda, #clubes #izda img, #clubes #izda p, #grupos ul { float: left; }
+header ul, #clubes #dcha, #grupos span, #grupos div { float: right; }
+
+h2, #clubes > p, table td:nth-child(2), #servicios article { text-align: center; }
+#clubes > p, #clubes #dcha p { font-size: 13px; }
+#clubes #dcha, table { box-shadow: 1px 5px 5px #D6DEDB; }
+
+button, #servicios { color: #FFFFFF; }
+button, #pie3 { background: #007B08; }
+
+#grupos li:nth-child(1), #grupos li:hover, table { background: #FFFFFF; }
+#grupos article:nth-child(2), #grupos article:nth-child(3), #grupos article:nth-child(4), #grupos article:nth-child(5), #grupos article:nth-child(6) { display: none; }
+
+#servicios, #pie1 { background: #06500B; }
+#pie1, #pie2, #pie3 {
+	margin: 0;
+	padding: 12px 0px;
+}
+
+
+/* >>>>>   ADAPTACIÓN A TABLET   <<<<< */
+@media screen and (max-width: 992px) {
+
+	header ul { margin-right: 30px; }
+
+	#clubes { background-position: -150px 15px; }
+		#izda { width: 500px; }
+			#izda p { width: 450px; }
+
+		#dcha {
+			height: 380px;
+			margin-right: 2px;
+			width: 340px;
+		}
+
+	#grupos {
+		margin-top: -380px;
+		padding-top: 500px;
+	}
+		#grupos div { width: 400px; }
+
+	td:nth-child(2) { padding: 75px 25px 0px; }
+
+	#servicios { margin-top: 200px; }
+		#servicios div { width: 820px; }
+
+		#servicios p { height: 300px; }
+
+	/* >>>>>   GRUPOS   <<<<< */
+	header, #clubes { width: 870px; }
+}
+
+
+/* >>>>>   ADAPTACIÓN A MÓVIL   <<<<< */
+@media screen and (max-width: 600px) {
+
+	header ul { margin: 30px 20px 35px 0px; }
+
+	#clubes { background-position: -240px 15px; }
+		#izda { margin-left: 25px; }
+
+		#dcha {
+			height: 350px;
+			margin: 0px 100px 10px 0px;
+		}
+			#dcha img { width: 100%; }
+
+	#grupos {
+		clip-path: polygon(0% 50%, 800% 0%, 0% 100%);
+		margin: -660px 0px -75px 0px;
+		padding: 830px 80px 250px 120px;
+	}
+		#grupos ul { margin-bottom: 50px; }
+
+	td:nth-child(2) { padding: 75px 20px 0px; }
+
+	#servicios {
+		clip-path: polygon(190% 0%, 0% 1180%, 0% 35%);
+		margin-top: 220px;
+		padding-top: 310px;
+	}
+		#servicios div {
+			margin: 0px 23px;
+			width: 90%;
+		}
+		
+		#servicios p {
+			height: 470px;
+			padding: 10px;
+		}
+
+	/* >>>>>   GRUPOS   <<<<< */
+	header, #clubes { width: 540px; }
+	#dcha, #grupos div { float: none; }
+}
